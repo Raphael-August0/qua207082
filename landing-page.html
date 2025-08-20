@@ -68,24 +68,24 @@
         }
 
         #carrossel div {
-            height: 175px;
+            height: 120px;
             width: 200px;
             background-color: gray;
             margin: 10px;
         }
 
-        #comments{
+        #comments {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        .noticia{
-            width: 400px;
+        .noticia {
+            width: 270px;
             margin: 30px;
         }
 
-        .noticia div{
+        .noticia div {
             border: 2px solid black;
             border-radius: 100%;
             float: left;
@@ -97,12 +97,52 @@
             margin-right: 10px;
         }
 
-        .noticia h3{
+        .noticia h3 {
             font-size: xx-large;
         }
 
-        .noticia p{
+        .noticia p {
             margin-top: 5px;
+        }
+
+        #depoimento {
+            display: flex;
+        }
+
+        .depoimento {
+            padding: 30px;
+        }
+
+        .foto {
+            background-color: gray;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: gray;
+            color: white;
+            margin-top: 150px;
+        }
+
+        body {
+            width: 1000px;
+            margin: auto;
+            border: 2px solid black;
+
+        }
+
+        html {
+            background-color: #dedede;
+        }
+        hr{
+            border: 2px solid gray;
+            width: 80%;
+            margin: auto;
         }
     </style>
 </head>
@@ -122,12 +162,13 @@
         <div>
             <h2>Lorem Ipsum <br> Dolor sit amet</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat
-            turpis hac nisi imperdiet ridiculus,
-            at dignissim leo nostra iaculis massa accumsan cras curae.
-            Molestie iaculis ad montes sociosqu integer risus platea volutpat scelerisque pulvinar purus,
-            himenaeos turpis primis parturient quisque vestibulum bibendum odio faucibus rutrum varius, rhoncus class
-            nisi magna</p>
+                fringilla volutpat
+                turpis hac nisi imperdiet ridiculus,
+                at dignissim leo nostra iaculis massa accumsan cras curae.
+                Molestie iaculis ad montes sociosqu integer risus platea volutpat scelerisque pulvinar purus,
+                himenaeos turpis primis parturient quisque vestibulum bibendum odio faucibus rutrum varius, rhoncus
+                class
+                nisi magna</p>
             <button>CTA Button</button>
         </div>
         <div>
@@ -137,6 +178,7 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
+    <hr>
     <section id="carrossel">
         <div></div>
         <div></div>
@@ -152,39 +194,52 @@
             <div>1</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
-                <div class="noticia">
+        <div class="noticia">
             <div>2</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
-                <div class="noticia">
+        <div class="noticia">
             <div>3</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
-                <div class="noticia">
+        <div class="noticia">
             <div>4</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
-                <div class="noticia">
+        <div class="noticia">
             <div>5</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
-                <div class="noticia">
+        <div class="noticia">
             <div>6</div>
             <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
-            fringilla volutpat</p>
+                fringilla volutpat</p>
         </div>
     </section>
+    <hr>
+
+    <section id="depoimentos">
+        <div class="depoimento">
+            <div class="foto"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mollis id aliquet, aenean dictumst
+                fringilla volutpat</p>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        alguma coisa escrita aqui que eu nao consegui ler.
+    </footer>
 </body>
 
 </html>
