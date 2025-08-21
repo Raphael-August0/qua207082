@@ -68,10 +68,39 @@
         }
 
         #carrossel div {
-            height: 120px;
+            height: 130px;
             width: 200px;
             background-color: gray;
             margin: 10px;
+        }
+
+
+        #container {
+            width: 880px;
+            overflow: hidden;
+        }
+
+        #carrossel-container {
+            width: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #carrossel-container div {
+            height: 130px;
+            min-width: 200px;
+            background-color: gray;
+            margin: 10px;
+        }
+
+        #bt-left,
+        #bt-right {
+            font-size: 300%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
         }
 
         #comments {
@@ -139,7 +168,8 @@
         html {
             background-color: #dedede;
         }
-        hr{
+
+        hr {
             border: 2px solid gray;
             width: 80%;
             margin: auto;
@@ -180,13 +210,22 @@
     </section>
     <hr>
     <section id="carrossel">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="bt-left" onclick="carroossel(-1)">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div id="container">
+            <div id="carrossel-container">
+                <div class="img">1</div>
+                <div class="img">2</div>
+                <div class="img">3</div>
+                <div class="img">4</div>
+                <div class="img">5</div>
+                <div class="img">6</div>
+            </div>
+        </div>
+        <div id="bt-right" onclick="carrossel(1)">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
     </section>
 
     <section id="comments">
@@ -240,6 +279,18 @@
     <footer>
         alguma coisa escrita aqui que eu nao consegui ler.
     </footer>
+
+    <script>
+        const imgs = document.getElementById("carrossel-container");
+        const img = document.querySelectorAll("#carrossel-container div");
+        let idx = 0;
+        function carrossel(i) {
+            idx += i;
+            if (idx < 0) idx = 0;
+            if (idx >= img.length - 1) idx = img.length - 1;
+            imgs.style.transform = 'translateX(${-idx * 220}px)';
+        }
+    </script>
 </body>
 
 </html>
