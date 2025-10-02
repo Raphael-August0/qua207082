@@ -15,6 +15,10 @@ frm.inDetalhes.addEventListener("focus", () => {
         const pizza = frm.inPizza.value
         const num = (pizza == "media") ? 2 : (pizza == "grande") ? 3: 4
         frm.inDetalhes.placeholder = `Até ${num} sabores`
+    } else{
+        const bebida = frm.inBebida.value
+        const sugestao = (bebida == "refri") ? "Coca-cola, Guaraná" : (bebida == "suco") ? "Limão, Maracujá, Laranja" : "Copo, Jarra"
+        frm.inDetalhes.placeholder = sugestao
     }
 })
 
