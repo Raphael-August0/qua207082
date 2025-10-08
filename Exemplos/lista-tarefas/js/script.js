@@ -1,6 +1,6 @@
 const frm = document.querySelector("form")
 const tbody = document.querySelector("tbody")
-const lsItem = []
+let lsItem = []
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -16,11 +16,19 @@ function prepararEdicao(index){
     frm.inItem.value = lsItem[index].item
     frm.inStatus.value = lsItem[index].status
     frm.inIndex.value = index
+    frm.btApagar.disabled = false
 }
 
 
 frm.btApagar.addEventListener("click", ()=> {
     const index = frm.inIndex.value
+    if(index == ""){
+        alert("Necessário selecionar 1 item")
+        return
+    }
+    if (confirm ("Deseja realmente apagar esse item?") == false){
+        return
+    }
     lsItem.splice(index,1)
     atualizarTabela()
     
@@ -28,6 +36,7 @@ frm.btApagar.addEventListener("click", ()=> {
 
 function atualizarTabela() {
     limpar()
+    localStorage.setItem("lsItem",JSON.stringify(lsItem))
     tbody.innerHTML = ""
     let cont = 0
     for(i of lsItem){
@@ -40,4 +49,11 @@ function limpar () {
     frm.inItem.value = ""
     frm.inStatus.value = ""
     frm.inIndex.value = ""
+    frm.btApagar.disabled = true
+}
+
+
+if(localStorage.getItem("lsItem") != null){
+    lsItem = JSON.parse(localStorage.getItem("lsItem"))
+    atualizarTabela()
 }
