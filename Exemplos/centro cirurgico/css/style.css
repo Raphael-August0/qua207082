@@ -1,0 +1,101 @@
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  font-size: 15px;
+}
+
+
+button {
+  min-width: 100px;
+}
+
+
+table {
+  font-size: 15px;
+}
+
+table thead th {
+  text-align: center;
+}
+
+table tbody td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+#painel {
+  background-color: #FFFF;
+  color: black;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.painel-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.painel-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.painel-tabela th, .painel-tabela td {
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+
+.status-amarelo {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-verde {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-azul {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+#dataHora {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+  .painel-tabela {
+    font-size: 14px;
+  }
+
+  button {
+    min-width: auto;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
