@@ -19,6 +19,7 @@ h1{
     font-style: normal;
 }
 
+
 .esquerdo{
     font-family: "Quattrocento", serif;
 }
@@ -52,8 +53,21 @@ h1, p{
 }
 
 #btVela #qt{
-    background-color: white;
+    background-color: #aca2a2;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -3px;
+    right: -5px;
+    border-radius: 100%;
+    color: #fff;
+    padding: 0px 5px;
+    font-weight: bold;
+}
+
+#produtos{
+    margin-top: 80px;
+}
+
+.produto{
+    background-color: white;
+    text-align: center;
 }
