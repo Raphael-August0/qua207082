@@ -5,10 +5,13 @@
     padding: 0px;
 }
 
+body{
+    background-color: #838383;
+}
+
 .container {
-    width: 785px;
-    /* height: 100vh; */
-    background-color: #efedec;
+    width: 1000px;
+    background-color: #000000;
     margin: auto;
     padding: 50px;
 }
@@ -25,11 +28,11 @@ h1 {
 
 h1,
 p {
-    color: #3b0a0a;
+    color: #ffffff;
 }
 
 #btVela {
-    background-color: #3b0a0a;
+    background-color: #210047;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -51,10 +54,11 @@ p {
 #btVela img {
     height: 80%;
     filter: invert(1);
+    border-radius: 2px;
 }
 
 #btVela #qt {
-    background-color: #aca2a2;
+    background-color: #535353;
     position: absolute;
     top: -3px;
     right: -5px;
@@ -72,7 +76,7 @@ p {
 }
 
 .produto {
-    background-color: white;
+    background-color: #210047;
     text-align: center;
     width: 210px;
     padding: 20px;
@@ -80,10 +84,12 @@ p {
     cursor: pointer;
     transition: box-shadow 0.5s;
     position: relative;
+    border-radius: 5px;
 }
 
 .produto > div > img{
     display: none;
+    border-radius: 2px;
 }
 
 .marcado > div > img{
@@ -97,11 +103,11 @@ p {
 }
 
 .produto:hover{
-    box-shadow: 0px 0px 7px 0px #3b0a0a;    
+    box-shadow: 0px 0px 7px 0px #555555;    
 }
 
 .marcado{
-    background-color: #3b0a0a;
+    background-color: #555555;
 }
 
 .marcado p{
@@ -145,7 +151,7 @@ p {
 }
 
 td {
-    background-color: #3b0a0a;
+    background-color: #210047;
     color: white;
     padding: 5px;
     text-align: center;
@@ -161,7 +167,7 @@ form {
 }
 
 form label{
-    color: #3b0a0a;
+    color: #ffffff;
     font-family: "Trocchi", serif;
 }
 
@@ -172,23 +178,27 @@ form input{
 form #inNome{
     padding: 5px;
     width: 300px;
-    border: #3b0a0a solid 1px;
+    border: #210047 solid 1px;
+}
+
+img {
+    border-radius: 2px;
 }
 
 form input[value]{
-    background-color: #3b0a0a;
+    background-color: #210047;
     padding: 5px 10px;
     color: white;
     font-size: large;
     cursor: pointer;
     border-radius: 10px;
-    border: #3b0a0a solid 1px;
+    border: #210047 solid 1px;
 }
 
 form input[value]:hover{
     background-color: rgb(215, 212, 212);
-    color: #3b0a0a;
-    border: #3b0a0a solid 1px;
+    color: #210047;
+    border: #210047 solid 1px;
 }
 
 @media only screen and (max-width: 600px) {

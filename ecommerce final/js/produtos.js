@@ -1,56 +1,56 @@
 const lsProduto = [
     {
-        nome: "Banho de Mar",
-        descricao: "Vela Aromática - 300g",
+        nome: "Sanemi Katana",
+        descricao: "Katana de bambu-Sanemi-Decoração",
         img: "img/katana-DS.webp",
-        valor: 39
+        valor: 159
     },
     {
-        nome: "Passeio na Floresta",
-        descricao: "Vela Aromática - 300g",
+        nome: "Batman Figure",
+        descricao: "Action Figure articulada-Batman",
         img: "img/AF_batman.webp",
-        valor: 39
+        valor: 230
     },
     {
-        nome: "Trio Bom dia",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-03.png",
-        valor: 39
+        nome: "Bandana aldeia da Folha",
+        descricao: "Bandana-Naruto-",
+        img: "img/bandana-folha.webp",
+        valor: 40
     },
     {
-        nome: "Meus Cristais",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-04.png",
-        valor: 39
+        nome: "Blusa Star Wars",
+        descricao: "Blusa com estampa-Masculina",
+        img: "img/SW-blusa.jpg",
+        valor: 79
     },
     {
-        nome: "Campo de Lavanda",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-05.png",
-        valor: 39
+        nome: "Moletom Tropa de Exploração",
+        descricao: "Moletom-Attack on Titan",
+        img: "img/moletom-AOT.jpg",
+        valor: 140
     },
     {
-        nome: "Minha Rotina",
-        descricao: "vela aromática - 300g",
-        img: "img/vela-06.png",
-        valor: 39
+        nome: "Naruto Figure",
+        descricao: "Action Figure-Não Articulada-Naruto",
+        img: "img/naruto-figure.webp",
+        valor: 230
     },
     {
-        nome: "Vida no Campo",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-07.png",
-        valor: 39
+        nome: "Blusa do Stitch",
+        descricao: "Blusa Infantil-Stitch-Feminina",
+        img: "img/Stitch-blusa.webp",
+        valor: 79
     },
     {
-        nome: "Meu Momento",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-08.png",
-        valor: 39
+        nome: "Box de Mangás",
+        descricao: "Coleção de Mangás-Bleach",
+        img: "img/box-mangá.webp",
+        valor: 299
     },
     {
-        nome: "Flores Vivas",
-        descricao: "Vela Aromática - 300g",
-        img: "img/vela-09.png",
-        valor: 39
+        nome: "Fruta de One Piece",
+        descricao: "Fruta One Piece-Plástico-Decoração",
+        img: "img/fruta-OP.webp",
+        valor: 59
     }
 ]
