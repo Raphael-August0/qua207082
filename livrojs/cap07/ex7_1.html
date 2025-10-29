@@ -1,0 +1,11 @@
+<script>
+    const anuncio = prompt("Anúncio: ")
+    let qtEspacos = 0
+    const tam = anuncio.length
+    for(let i = 0; i < tam; i++){
+        if(anuncio.charAt(i) == " "){
+            qtEspacos++
+        }
+    }
+    alert(`Anúncio: ${anuncio}\nNº Palavras: ${qtEspacos+1}`)
+</script>
